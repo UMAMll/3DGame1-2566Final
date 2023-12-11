@@ -18,7 +18,7 @@ public class PlayerInput : MonoBehaviour
 
     protected Vector2 m_Movement;
     protected Vector2 m_Camera;
-    protected bool m_Jump;
+    public bool m_Jump;
     protected bool m_Attack;
     protected bool m_Pause;
     public bool m_ExternalInputBlocked;

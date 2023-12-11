@@ -21,6 +21,8 @@ namespace Gamekit3D
         public float maxTurnSpeed = 1200f;        // How fast Ellen turns when stationary.
         public float idleTimeout = 5f;            // How long before Ellen starts considering random idles.
         public bool canAttack;                    // Whether or not Ellen can swing her staff.
+        public bool m_ReadyToJump;                  // Whether or not the input state and Ellen are correct to allow jumping.
+        public bool m_IsGrounded = true;            // Whether or not Ellen is currently standing on the ground.
 
         public CameraSettings cameraSettings;            // Reference used to determine the camera's direction.
         public MeleeWeapon meleeWeapon;                  // Reference used to (de)activate the staff when attacking. 
@@ -38,9 +40,7 @@ namespace Gamekit3D
         protected AnimatorStateInfo m_PreviousCurrentStateInfo;    // Information about the base layer of the animator from last frame.
         protected AnimatorStateInfo m_PreviousNextStateInfo;
         protected bool m_PreviousIsAnimatorTransitioning;
-        protected bool m_IsGrounded = true;            // Whether or not Ellen is currently standing on the ground.
         protected bool m_PreviouslyGrounded = true;    // Whether or not Ellen was standing on the ground last frame.
-        protected bool m_ReadyToJump;                  // Whether or not the input state and Ellen are correct to allow jumping.
         protected float m_DesiredForwardSpeed;         // How fast Ellen aims be going along the ground based on input.
         protected float m_ForwardSpeed;                // How fast Ellen is currently going along the ground.
         protected float m_VerticalSpeed;               // How fast Ellen is currently moving up or down.

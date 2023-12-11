@@ -15,5 +15,12 @@ namespace Gamekit3D
             Cursor.visible = visible;
             Cursor.lockState = lockMode;
         }
+
+        public void SetMode(bool VisibleMode)
+        {
+            visible = VisibleMode;
+            Cursor.visible = visible;
+            Cursor.lockState = lockMode;
+        }
     }
 }

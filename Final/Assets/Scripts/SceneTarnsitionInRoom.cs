@@ -18,8 +18,9 @@ public class SceneTarnsitionInRoom: MonoBehaviour
                 F_click.Invoke();
             /*else
                 ReportQuest.Invoke();
-            return;*/
+           return;*/
         }
-
+        return;
     }
+    
 }
