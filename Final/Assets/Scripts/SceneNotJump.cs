@@ -1,16 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Gamekit3D
 {
     public class SceneNotJump : MonoBehaviour
     {
-        void Start()
+        public UnityEvent Is_True;
+        public static bool CanJump;
+
+        private void FixedUpdate()
         {
-            PlayerController.instance.m_ReadyToJump = false;
-            PlayerController.instance.m_IsGrounded = false;
-            PlayerInput.Instance.m_Jump = false;
+            Is_True.Invoke();
         }
+        public void SetJump(bool canjump)
+        {
+            CanJump = canjump;
+        }
+
     }
 }

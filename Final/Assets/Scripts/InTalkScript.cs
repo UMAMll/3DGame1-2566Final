@@ -32,6 +32,7 @@ namespace Gamekit3D
 
         }
 
+
         public void EndTalk()
         {
             Cursor.lockState = true ? CursorLockMode.Locked : CursorLockMode.None;

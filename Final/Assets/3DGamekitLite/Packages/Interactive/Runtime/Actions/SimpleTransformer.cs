@@ -19,6 +19,8 @@ namespace Gamekit3D.GameCommands
         public bool activate = false;
         public SendGameCommand OnStartCommand, OnStopCommand;
 
+        public bool Deactivate = false;
+
         public AudioSource onStartAudio, onEndAudio;
 
         [Range(0, 1)]
@@ -49,6 +51,12 @@ namespace Gamekit3D.GameCommands
             if (onStartAudio != null) onStartAudio.Play();
         }
 
+        public void Stopped()
+        {
+            activate = false;
+            Deactivate = true;
+
+        }
         public void FixedUpdate()
         {
             if (activate)
@@ -68,12 +76,14 @@ namespace Gamekit3D.GameCommands
                 }
                 PerformTransform(position);
             }
+            
         }
 
         public virtual void PerformTransform(float position)
         {
 
         }
+
 
         void LoopPingPong()
         {

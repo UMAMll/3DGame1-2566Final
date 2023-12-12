@@ -17,6 +17,7 @@ namespace Gamekit3D.GameCommands
                     pt.PerformTransform(pt.previewPosition);
                 }
             }
+            
         }
 
     }

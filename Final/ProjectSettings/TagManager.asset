@@ -7,11 +7,12 @@ TagManager:
   - FlythroughCam
   - guide
   - Start
+  - KW
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - KawII
   - Water
   - UI
   - 

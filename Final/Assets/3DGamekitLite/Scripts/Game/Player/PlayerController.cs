@@ -20,8 +20,8 @@ namespace Gamekit3D
         public float minTurnSpeed = 400f;         // How fast Ellen turns when moving at maximum speed.
         public float maxTurnSpeed = 1200f;        // How fast Ellen turns when stationary.
         public float idleTimeout = 5f;            // How long before Ellen starts considering random idles.
+        public bool ReadyToJump;                  // Whether or not the input state and Ellen are correct to allow jumping.
         public bool canAttack;                    // Whether or not Ellen can swing her staff.
-        public bool m_ReadyToJump;                  // Whether or not the input state and Ellen are correct to allow jumping.
         public bool m_IsGrounded = true;            // Whether or not Ellen is currently standing on the ground.
 
         public CameraSettings cameraSettings;            // Reference used to determine the camera's direction.
@@ -109,7 +109,10 @@ namespace Gamekit3D
         {
             this.canAttack = canAttack;
         }
-
+        public void SetCanJump(bool CanJump)
+        {
+            this.ReadyToJump = CanJump;
+        }
         // Called automatically by Unity when the script is first added to a gameobject or is reset from the context menu.
         void Reset()
         {
@@ -275,7 +278,7 @@ namespace Gamekit3D
         {
             // If jump is not currently held and Ellen is on the ground then she is ready to jump.
             if (!m_Input.JumpInput && m_IsGrounded)
-                m_ReadyToJump = true;
+                ReadyToJump = true;
 
             if (m_IsGrounded)
             {
@@ -283,12 +286,12 @@ namespace Gamekit3D
                 m_VerticalSpeed = -gravity * k_StickingGravityProportion;
 
                 // If jump is held, Ellen is ready to jump and not currently in the middle of a melee combo...
-                if (m_Input.JumpInput && m_ReadyToJump && !m_InCombo)
+                if (m_Input.JumpInput && ReadyToJump && !m_InCombo)
                 {
                     // ... then override the previously set vertical speed and make sure she cannot jump again.
                     m_VerticalSpeed = jumpSpeed;
                     m_IsGrounded = false;
-                    m_ReadyToJump = false;
+                    ReadyToJump = false;
                 }
             }
             else

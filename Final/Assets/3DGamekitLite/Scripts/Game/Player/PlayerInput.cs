@@ -78,7 +78,8 @@ public class PlayerInput : MonoBehaviour
     {
         m_Movement.Set(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         m_Camera.Set(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
-        m_Jump = Input.GetButton("Jump");
+        if (SceneNotJump.CanJump == true)
+            m_Jump = Input.GetButton("Jump");
 
         if (Input.GetButtonDown("Fire1"))
         {

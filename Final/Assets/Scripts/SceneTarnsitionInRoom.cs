@@ -14,11 +14,9 @@ public class SceneTarnsitionInRoom: MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            //if (GameCountLib.currantCount == GameCountLib.MaxCount)
-                F_click.Invoke();
-            /*else
-                ReportQuest.Invoke();
-           return;*/
+            F_click.Invoke();
+            gameObject.SetActive(false);
+            return;
         }
         return;
     }

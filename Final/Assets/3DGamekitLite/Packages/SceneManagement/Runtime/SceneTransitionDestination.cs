@@ -7,7 +7,7 @@ namespace Gamekit3D
     {
         public enum DestinationTag
         {
-            A, B, C, D, E, F, G,Start,
+            A, B, C, D, E, F, G,Start,I,II,III
         }
 
 
