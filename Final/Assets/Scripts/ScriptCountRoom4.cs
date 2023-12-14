@@ -10,7 +10,7 @@ public class ScriptCountRoom4 : MonoBehaviour
 
     void Update()
     {
-        QuestText.text = "เรียงเก้าอี้แล้ว   " + GameCountStd.currantstudentCount.ToString() + " / " + GameCountStd.MaxstudentCount.ToString();
-        QuestTextcom.text = "เรียงเก้าอี้แล้ว   " + GameCountStd.currantstudentCount.ToString() + " / " + GameCountStd.MaxstudentCount.ToString();
+        QuestText.text = "เรียงเก้าอี้แล้ว   " + GameCountKW.currantKWCount.ToString() + " / " + GameCountKW.MaxKWCount.ToString();
+        QuestTextcom.text = "เรียงเก้าอี้แล้ว   " + GameCountKW.currantKWCount.ToString() + " / " + GameCountKW.MaxKWCount.ToString();
     }
 }
