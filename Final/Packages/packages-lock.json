@@ -143,12 +143,8 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.render-pipelines.core": {
-
-      "version": "12.1.8",
-
       "version": "12.1.13",
       "depth": 0,
-      "depth": 1,
       "source": "builtin",
       "dependencies": {
         "com.unity.ugui": "1.0.0",
