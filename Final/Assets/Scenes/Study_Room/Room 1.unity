@@ -14780,7 +14780,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: e63a371f511976b4fb579379e4f21239, type: 2}
-  - {fileID: 2100000, guid: 79403dd833b028648b04101c9faf2057, type: 2}
+  - {fileID: 2100000, guid: dae58aea48802e542ae517b460c93d0b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -21411,6 +21411,27 @@ PrefabInstance:
     - target: {fileID: 4857368061475226, guid: 4c0a7341bc0c0aa4b8c5563337500b1a, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114594890418770434, guid: 4c0a7341bc0c0aa4b8c5563337500b1a,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a16021747bd8b7b4688250aec069cdd5,
+        type: 3}
+    - target: {fileID: 114594890418770434, guid: 4c0a7341bc0c0aa4b8c5563337500b1a,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114594890418770434, guid: 4c0a7341bc0c0aa4b8c5563337500b1a,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114594890418770434, guid: 4c0a7341bc0c0aa4b8c5563337500b1a,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c0a7341bc0c0aa4b8c5563337500b1a, type: 3}

@@ -11,10 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Study_Room/Room 1.unity
     guid: 6cafb44dea8cef34cae297fe1ab51181
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Study_Room/Room 2.unity
     guid: ca2c81e4332b93c49bbe43583627bac1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Study_Room/Room 3.unity
     guid: 2c03c69f192b63e4cb4dc61bf25fed21
   - enabled: 1
@@ -23,7 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Library.unity
     guid: 33d284cb8c1613f4f9e3882a6b16023e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Meetingtown.unity
     guid: 233c34bc1a7ee0c41bc3bc2f3f85cd63
+  - enabled: 1
+    path: Assets/Scenes/dungeon.unity
+    guid: f07842d463bb18b4c86b0c97dba6077f
   m_configObjects: {}

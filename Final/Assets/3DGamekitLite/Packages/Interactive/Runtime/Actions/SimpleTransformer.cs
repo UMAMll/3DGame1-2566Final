@@ -19,12 +19,9 @@ namespace Gamekit3D.GameCommands
         public bool activate = false;
         public SendGameCommand OnStartCommand, OnStopCommand;
 
-        public bool Deactivate = false;
-
         public AudioSource onStartAudio, onEndAudio;
 
-        [Range(0, 1)]
-        public float previewPosition;
+        [Range(0, 1)] public float previewPosition;
         float time = 0f;
         float position = 0f;
         float direction = 1f;
@@ -51,12 +48,6 @@ namespace Gamekit3D.GameCommands
             if (onStartAudio != null) onStartAudio.Play();
         }
 
-        public void Stopped()
-        {
-            activate = false;
-            Deactivate = true;
-
-        }
         public void FixedUpdate()
         {
             if (activate)
